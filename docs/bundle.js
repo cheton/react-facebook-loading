@@ -21719,16 +21719,16 @@
 	        className: _FacebookLoading2.default.loading,
 	        style: _extends({
 	            animationDuration: duration,
-	            webkitAnimationDuration: duration,
-	            mozAnimationDuration: duration,
-	            oAnimationDuration: duration,
+	            WebkitAnimationDuration: duration,
+	            MozAnimationDuration: duration,
+	            OAnimationDuration: duration,
 	            zoom: zoom
 	        }, style)
 	    });
 	};
 	
 	FacebookLoading.propTypes = {
-	    duration: _react.PropTypes.oneOf([_react.PropTypes.number, _react.PropTypes.string]),
+	    duration: _react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.string]),
 	    zoom: _react.PropTypes.number
 	};
 	
@@ -22094,4 +22094,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=bundle.js.map?c0042bdb47b1b8341e7a
+//# sourceMappingURL=bundle.js.map?67084902a4f4eb8635ac
