@@ -13,9 +13,9 @@ const FacebookLoading = (props) => {
             className={styles.loading}
             style={{
                 animationDuration: duration,
-                webkitAnimationDuration: duration,
-                mozAnimationDuration: duration,
-                oAnimationDuration: duration,
+                WebkitAnimationDuration: duration,
+                MozAnimationDuration: duration,
+                OAnimationDuration: duration,
                 zoom: zoom,
                 ...style
             }}
