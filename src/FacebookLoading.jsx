@@ -24,7 +24,7 @@ const FacebookLoading = (props) => {
 };
 
 FacebookLoading.propTypes = {
-    duration: PropTypes.oneOf([
+    duration: PropTypes.oneOfType([
         PropTypes.number,
         PropTypes.string
     ]),
