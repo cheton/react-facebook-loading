@@ -49,10 +49,15 @@ Demo: https://cheton.github.io/react-facebook-loading
   </thead>
   <tbody>
     <tr>
+      <td>delay</td>
+      <td>String|Number</td>
+      <td>0</td>
+      <td>Specify a delay for the start of an animation. The value is defined in seconds (s) or milliseconds (ms). If you specify a number, rather than a regular string, it will use the 'ms' as the unit.</td>
+    <tr>
       <td>duration</td>
       <td>String|Number</td>
       <td>'0.8s'</td>
-      <td>The duration that an animation should take to complete one cycle. This may be specified in either seconds (by specifying s as the unit) or milliseconds (by specifying ms as the unit). If you specify a number instead of string, it will use the second as the unit.</td>
+      <td>Specify how long an animation takes to complete one cycle. The value is defined in seconds (s) or milliseconds (ms). If you specify a number, rather than a regular string, it will use the 'ms' as the unit.</td>
     </tr>
     <tr>
       <td>zoom</td>
