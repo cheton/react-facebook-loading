@@ -50,13 +50,13 @@ Demo: https://cheton.github.io/react-facebook-loading
   <tbody>
     <tr>
       <td>delay</td>
-      <td>String|Number</td>
+      <td>Number|String</td>
       <td>0</td>
       <td>Specify a delay for the start of an animation. The value is defined in seconds (s) or milliseconds (ms). If you specify a number, rather than a regular string, it will use the 'ms' as the unit.</td>
     <tr>
       <td>duration</td>
-      <td>String|Number</td>
-      <td>'0.8s'</td>
+      <td>Number|String</td>
+      <td>800</td>
       <td>Specify how long an animation takes to complete one cycle. The value is defined in seconds (s) or milliseconds (ms). If you specify a number, rather than a regular string, it will use the 'ms' as the unit.</td>
     </tr>
     <tr>
