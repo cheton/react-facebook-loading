@@ -44,7 +44,7 @@ FacebookLoading.propTypes = {
 
 FacebookLoading.defaultProps = {
     delay: 0,
-    duration: '0.8s',
+    duration: 800,
     zoom: 1
 };
 

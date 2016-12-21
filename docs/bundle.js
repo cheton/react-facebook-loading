@@ -21761,7 +21761,7 @@
 	
 	FacebookLoading.defaultProps = {
 	    delay: 0,
-	    duration: '0.8s',
+	    duration: 800,
 	    zoom: 1
 	};
 	
@@ -22122,4 +22122,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=bundle.js.map?3c5fbfc3449ad326d6a2
+//# sourceMappingURL=bundle.js.map?9bd6c432f98b85339dbd
