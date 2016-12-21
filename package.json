@@ -1,6 +1,6 @@
 {
   "name": "react-facebook-loading",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "The Facebook loading animation for React",
   "main": "lib/index.js",
   "files": [

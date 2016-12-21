@@ -127,7 +127,7 @@
 	                                    _react2.default.createElement(
 	                                        'strong',
 	                                        null,
-	                                        'zoom=2'
+	                                        'duration="800ms"'
 	                                    )
 	                                ),
 	                                _react2.default.createElement(
@@ -136,7 +136,7 @@
 	                                    _react2.default.createElement(
 	                                        'strong',
 	                                        null,
-	                                        'duration="800ms"'
+	                                        'zoom=2'
 	                                    )
 	                                )
 	                            ),
@@ -162,7 +162,7 @@
 	                                    _react2.default.createElement(
 	                                        'strong',
 	                                        null,
-	                                        'zoom=3'
+	                                        'duration="1.2s"'
 	                                    )
 	                                ),
 	                                _react2.default.createElement(
@@ -171,7 +171,7 @@
 	                                    _react2.default.createElement(
 	                                        'strong',
 	                                        null,
-	                                        'duration="1.2s"'
+	                                        'zoom=3'
 	                                    )
 	                                )
 	                            ),
@@ -197,7 +197,7 @@
 	                                    _react2.default.createElement(
 	                                        'strong',
 	                                        null,
-	                                        'zoom=4'
+	                                        'delay="300ms"'
 	                                    )
 	                                ),
 	                                _react2.default.createElement(
@@ -206,14 +206,23 @@
 	                                    _react2.default.createElement(
 	                                        'strong',
 	                                        null,
-	                                        'duration=0.8'
+	                                        'duration=800'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        'strong',
+	                                        null,
+	                                        'zoom=4'
 	                                    )
 	                                )
 	                            ),
 	                            _react2.default.createElement(
 	                                'div',
 	                                { className: 'col-xs-6' },
-	                                _react2.default.createElement(_src2.default, { zoom: 4, duration: 0.8, style: { margin: '0 auto' } })
+	                                _react2.default.createElement(_src2.default, { zoom: 4, delay: '300ms', duration: 800, style: { margin: '0 auto' } })
 	                            )
 	                        )
 	                    ),
@@ -232,7 +241,7 @@
 	                                    _react2.default.createElement(
 	                                        'strong',
 	                                        null,
-	                                        'zoom=5'
+	                                        'delay=1500'
 	                                    )
 	                                ),
 	                                _react2.default.createElement(
@@ -241,14 +250,23 @@
 	                                    _react2.default.createElement(
 	                                        'strong',
 	                                        null,
-	                                        'duration=1.2'
+	                                        'duration=1200'
+	                                    )
+	                                ),
+	                                _react2.default.createElement(
+	                                    'div',
+	                                    null,
+	                                    _react2.default.createElement(
+	                                        'strong',
+	                                        null,
+	                                        'zoom=5'
 	                                    )
 	                                )
 	                            ),
 	                            _react2.default.createElement(
 	                                'div',
 	                                { className: 'col-xs-6' },
-	                                _react2.default.createElement(_src2.default, { zoom: 5, duration: 1.2, style: { margin: '0 auto' } })
+	                                _react2.default.createElement(_src2.default, { zoom: 5, delay: 1500, duration: 1200, style: { margin: '0 auto' } })
 	                            )
 	                        )
 	                    )
@@ -21707,17 +21725,25 @@
 	
 	var FacebookLoading = function FacebookLoading(props) {
 	    var style = props.style,
+	        delay = props.delay,
 	        duration = props.duration,
 	        zoom = props.zoom;
 	
 	
+	    if (typeof delay === 'number') {
+	        delay += 'ms';
+	    }
 	    if (typeof duration === 'number') {
-	        duration += 's';
+	        duration += 'ms';
 	    }
 	
 	    return _react2.default.createElement('div', {
 	        className: _FacebookLoading2.default.loading,
 	        style: _extends({
+	            animationDelay: delay,
+	            WebkitAnimationDelay: delay,
+	            MozAnimationDelay: delay,
+	            OAnimationDelay: delay,
 	            animationDuration: duration,
 	            WebkitAnimationDuration: duration,
 	            MozAnimationDuration: duration,
@@ -21728,11 +21754,13 @@
 	};
 	
 	FacebookLoading.propTypes = {
+	    delay: _react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.string]),
 	    duration: _react.PropTypes.oneOfType([_react.PropTypes.number, _react.PropTypes.string]),
 	    zoom: _react.PropTypes.number
 	};
 	
 	FacebookLoading.defaultProps = {
+	    delay: 0,
 	    duration: '0.8s',
 	    zoom: 1
 	};
@@ -22094,4 +22122,4 @@
 
 /***/ }
 /******/ ]);
-//# sourceMappingURL=bundle.js.map?67084902a4f4eb8635ac
+//# sourceMappingURL=bundle.js.map?3c5fbfc3449ad326d6a2
