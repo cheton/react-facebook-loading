@@ -27,7 +27,8 @@ Demo: https://cheton.github.io/react-facebook-loading
 
 ```js
 <FacebookLoading
-    duration="0.8s"
+    delay={0}
+    duration={800}
     zoom={1}
     style={{ margin: '0 auto' }}
 />
