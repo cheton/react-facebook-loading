@@ -2,16 +2,23 @@ import React, { PropTypes } from 'react';
 import styles from './FacebookLoading.styl';
 
 const FacebookLoading = (props) => {
-    let { style, duration, zoom } = props;
+    let { style, delay, duration, zoom } = props;
 
+    if (typeof delay === 'number') {
+        delay += 'ms';
+    }
     if (typeof duration === 'number') {
-        duration += 's';
+        duration += 'ms';
     }
 
     return (
         <div
             className={styles.loading}
             style={{
+                animationDelay: delay,
+                WebkitAnimationDelay: delay,
+                MozAnimationDelay: delay,
+                OAnimationDelay: delay,
                 animationDuration: duration,
                 WebkitAnimationDuration: duration,
                 MozAnimationDuration: duration,
@@ -24,6 +31,10 @@ const FacebookLoading = (props) => {
 };
 
 FacebookLoading.propTypes = {
+    delay: PropTypes.oneOfType([
+        PropTypes.number,
+        PropTypes.string
+    ]),
     duration: PropTypes.oneOfType([
         PropTypes.number,
         PropTypes.string
@@ -32,6 +43,7 @@ FacebookLoading.propTypes = {
 };
 
 FacebookLoading.defaultProps = {
+    delay: 0,
     duration: '0.8s',
     zoom: 1
 };
