@@ -43,23 +43,23 @@ class App extends Component {
                         <div className="row">
                             <div className="col-xs-6">
                                 <div><strong>delay=&quot;300ms&quot;</strong></div>
-                                <div><strong>duration=0.8</strong></div>
+                                <div><strong>duration=800</strong></div>
                                 <div><strong>zoom=4</strong></div>
                             </div>
                             <div className="col-xs-6">
-                                <FacebookLoading zoom={4} delay="300ms" duration={0.8} style={{ margin: '0 auto' }} />
+                                <FacebookLoading zoom={4} delay="300ms" duration={800} style={{ margin: '0 auto' }} />
                             </div>
                         </div>
                     </li>
                     <li className="list-group-item">
                         <div className="row">
                             <div className="col-xs-6">
-                                <div><strong>delay=1.5</strong></div>
-                                <div><strong>duration=1.2</strong></div>
+                                <div><strong>delay=1500</strong></div>
+                                <div><strong>duration=1200</strong></div>
                                 <div><strong>zoom=5</strong></div>
                             </div>
                             <div className="col-xs-6">
-                                <FacebookLoading zoom={5} delay={1.5} duration={1.2} style={{ margin: '0 auto' }} />
+                                <FacebookLoading zoom={5} delay={1500} duration={1200} style={{ margin: '0 auto' }} />
                             </div>
                         </div>
                     </li>
